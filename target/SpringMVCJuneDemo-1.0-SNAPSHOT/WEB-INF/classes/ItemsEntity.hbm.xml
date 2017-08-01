@@ -1,0 +1,24 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!DOCTYPE hibernate-mapping PUBLIC
+    "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+    "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+
+    <class name="com.model.ItemsEntity" table="items" schema="coffeeshopdatabase">
+        <id name="iditems">
+            <column name="iditems" sql-type="int(11)"/>
+        </id>
+        <property name="itemsname">
+            <column name="itemsname" sql-type="varchar(45)" length="45"/>
+        </property>
+        <property name="itemscost">
+            <column name="itemscost" sql-type="varchar(45)" length="45"/>
+        </property>
+        <property name="itemsquantity">
+            <column name="itemsquantity" sql-type="int(11)"/>
+        </property>
+        <property name="itemsdescription">
+            <column name="itemsdescription" sql-type="varchar(45)" length="45" not-null="true"/>
+        </property>
+    </class>
+</hibernate-mapping>
